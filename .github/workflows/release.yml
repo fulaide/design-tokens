@@ -1,11 +1,9 @@
-# The name of the action that will be shown in the GitHub UI
 name: Release
 
-# The trigger; runs on any push to the main branch
 on:
   push:
     branches:
-      - 'main'
+      - main
 
 jobs:
   release:
@@ -20,21 +18,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
 
       - name: Build tokens
-        run: pnpm run build
+        run: npm run build
 
-      - name: Publish package to NPM
-        run: pnpm publish --provenance --access public
+      - name: Publish to NPM
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
