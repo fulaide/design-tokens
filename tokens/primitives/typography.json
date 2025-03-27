@@ -1,0 +1,12 @@
+{
+  "fontSize": {
+    "100": {
+      "$value": 1,
+      "$type": "fontSize"
+    },
+    "200": {
+      "$value": 1.25,
+      "$type": "fontSize"
+    }
+  }
+}

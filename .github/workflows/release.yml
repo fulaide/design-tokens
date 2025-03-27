@@ -1,0 +1,40 @@
+# The name of the action that will be shown in the GitHub UI
+name: Release
+
+# The trigger; runs on any push to the main branch
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  release:
+    name: Release design tokens to NPM
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build tokens
+        run: pnpm run build
+
+      - name: Publish package to NPM
+        run: pnpm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,0 +1,20 @@
+{
+  "component": {
+    "button": {
+      "background": {
+        "$value": "{color.text.default}",
+        "$type": "color",
+        "description": "Button background color",
+        "public": true
+      },
+      "padding": {
+        "inline": {
+          "$value": "{spacing.padding.default}",
+          "$type": "dimension",
+          "description": "Button horizontal padding",
+          "public": true
+        }
+      }
+    }
+  }
+}

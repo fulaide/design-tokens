@@ -1,0 +1,12 @@
+{
+  "spacing": {
+    "100": {
+      "$value": "0.25rem",
+      "$type": "dimension"
+    },
+    "200": {
+      "$value": "0.5rem",
+      "$type": "dimension"
+    }
+  }
+}

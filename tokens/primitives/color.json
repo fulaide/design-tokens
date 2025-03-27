@@ -1,0 +1,14 @@
+{
+  "color": {
+    "neutral": {
+      "100": {
+        "$value": "#F5F5F5",
+        "$type": "color"
+      },
+      "900": {
+        "$value": "#111111",
+        "$type": "color"
+      }
+    }
+  }
+}

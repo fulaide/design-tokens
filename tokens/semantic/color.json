@@ -1,0 +1,12 @@
+{
+  "color": {
+    "text": {
+      "default": {
+        "$value": "{color.neutral.900}",
+        "$type": "color",
+        "description": "Default foreground text color",
+        "public": true
+      }
+    }
+  }
+}
