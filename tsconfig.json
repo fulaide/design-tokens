@@ -12,7 +12,9 @@
       "moduleResolution": "node",
       "esModuleInterop": true,
       "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
+      "forceConsistentCasingInFileNames": true,
+      "allowJs": true,      
+      "emitDeclarationOnly": true      
     },
     "include": [
       "src/**/*",
