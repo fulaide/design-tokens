@@ -23,7 +23,6 @@
     "build": "npm run clean && npm run tokens && npm run types",
     "clean": "rimraf dist",
     "tokens": "style-dictionary build --config style-dictionary.config.cjs",
-    "types": "tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
