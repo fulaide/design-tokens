@@ -35,16 +35,16 @@
     "tailwind",
     "design-system"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Lars Vorreiter <your.email@example.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/design-tokens.git"
+    "url": "https://github.com/fulaide/design-tokens.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/design-tokens/issues"
+    "url": "https://github.com/fulaide/design-tokens/issues"
   },
-  "homepage": "https://github.com/your-org/design-tokens#readme",
+  "homepage": "https://github.com/fulaide/design-tokens#readme",
   "engines": {
     "node": ">=16.0.0"
   },
