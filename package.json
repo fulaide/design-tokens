@@ -1,15 +1,68 @@
 {
-  "name": "@bianlian/design-tokens",
-  "version": "1.0.0",
-  "main": "build/tokens.json",
-  "license": "MIT",
-  "scripts": {
-    "build": "node scripts/build.js"
+  "name": "@your-org/design-tokens",
+  "version": "0.1.0",
+  "description": "Comprehensive design tokens for consistent styling",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./css": "./dist/css/variables.css",
+    "./tailwind": "./dist/tailwind/theme.js"
   },
-  "devDependencies": {
-    "style-dictionary": "^3.0.0"
+  "files": [
+    "dist",
+    "tokens"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run tokens && npm run types",
+    "clean": "rimraf dist",
+    "tokens": "style-dictionary build",
+    "types": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint .",
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [
+    "design-tokens",
+    "css-variables",
+    "tailwind",
+    "design-system"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/design-tokens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/design-tokens/issues"
+  },
+  "homepage": "https://github.com/your-org/design-tokens#readme",
+  "engines": {
+    "node": ">=16.0.0"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "jest": "^29.5.0",
+    "rimraf": "^4.1.2",
+    "semantic-release": "^20.1.0",
+    "style-dictionary": "^3.8.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^4.9.5"
   }
 }

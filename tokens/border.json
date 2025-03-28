@@ -1,0 +1,27 @@
+{
+    "border": {
+      "radius": {
+        "none": { "value": "0", "type": "borderRadius" },
+        "sm": { "value": "0.125rem", "type": "borderRadius" },
+        "base": { "value": "0.25rem", "type": "borderRadius" },
+        "md": { "value": "0.375rem", "type": "borderRadius" },
+        "lg": { "value": "0.5rem", "type": "borderRadius" },
+        "xl": { "value": "0.75rem", "type": "borderRadius" },
+        "2xl": { "value": "1rem", "type": "borderRadius" },
+        "3xl": { "value": "1.5rem", "type": "borderRadius" },
+        "full": { "value": "9999px", "type": "borderRadius" }
+      },
+      "width": {
+        "none": { "value": "0", "type": "borderWidth" },
+        "sm": { "value": "1px", "type": "borderWidth" },
+        "base": { "value": "2px", "type": "borderWidth" },
+        "md": { "value": "3px", "type": "borderWidth" },
+        "lg": { "value": "4px", "type": "borderWidth" }
+      },
+      "style": {
+        "solid": { "value": "solid", "type": "borderStyle" },
+        "dashed": { "value": "dashed", "type": "borderStyle" },
+        "dotted": { "value": "dotted", "type": "borderStyle" }
+      }
+    }
+  }
