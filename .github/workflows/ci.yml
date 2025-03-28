@@ -36,8 +36,8 @@ jobs:
     - name: Publish (on main branch)
       if: github.ref == 'refs/heads/main'
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}       # ✅ Token for GitHub access
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # ✅ Token for NPM publish (if needed)
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: npx semantic-release
 
     - name: Publish (on next branch)
