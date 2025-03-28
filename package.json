@@ -20,7 +20,7 @@
     "tokens"
   ],
   "scripts": {
-    "build": "npm run clean && npm run tokens && npm run types",
+    "build": "npm run clean && npm run tokens",
     "clean": "rimraf dist",
     "tokens": "style-dictionary build --config style-dictionary.config.cjs",
     "prepare": "npm run build",
