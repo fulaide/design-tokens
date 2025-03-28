@@ -1,28 +1,21 @@
-import StyleDictionary from 'style-dictionary';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-// Get the directory name of the current module
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const path = require('path');
+const StyleDictionary = require('style-dictionary');
 
 // Custom transform to handle token transformations
 StyleDictionary.registerTransform({
   name: 'custom/css-var',
   type: 'value',
   matcher: (token) => {
-    // Apply to most token types except compositions or complex objects
     return token.type && (typeof token.value === 'string' || typeof token.value === 'number');
   },
   transformer: (token) => {
-    // Convert token path to CSS variable format
     return `var(--${token.path.join('-')})`;
   }
 });
 
-export default {
+module.exports = {
   source: [
-    path.resolve(__dirname, '../tokens/**/*.json')
+    path.resolve(__dirname, 'tokens/**/*.json')
   ],
   platforms: {
     css: {
