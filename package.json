@@ -34,7 +34,8 @@
     "css-variables",
     "tailwind",
     "design-system",
-    "bian-lian"
+    "bian-lian",
+    "bianlian"
   ],
   "author": "Lars Vorreiter <your.email@example.com>",
   "license": "MIT",
