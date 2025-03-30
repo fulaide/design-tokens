@@ -5,14 +5,14 @@ A comprehensive design tokens system for consistent styling across projects.
 
 ## Installation
 ```bash
-npm install @ybianlian/design-tokens
+npm install @bianlian/design-tokens
 ```
 
 ## Usage
 
 ### CSS Variables
 ```javascript
-import '@ybianlian/design-tokens/dist/css/variables.css';
+import '@bianlian/design-tokens/dist/css/variables.css';
 ```
 
 ### Tailwind Configuration
