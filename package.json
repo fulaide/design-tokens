@@ -1,6 +1,6 @@
 {
   "name": "@bianlian/design-tokens",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Comprehensive design tokens for consistent styling",
   "type": "module",
   "main": "./dist/tokens.js",
