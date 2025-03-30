@@ -5,19 +5,19 @@ A comprehensive design tokens system for consistent styling across projects.
 
 ## Installation
 ```bash
-npm install @your-org/design-tokens
+npm install @ybianlian/design-tokens
 ```
 
 ## Usage
 
 ### CSS Variables
 ```javascript
-import '@your-org/design-tokens/dist/css/variables.css';
+import '@ybianlian/design-tokens/dist/css/variables.css';
 ```
 
 ### Tailwind Configuration
 ```javascript
-import theme from '@your-org/design-tokens/dist/tailwind/theme.js';
+import theme from '@bianlian/design-tokens/dist/tailwind/theme.js';
 
 module.exports = {
   theme: {
@@ -28,7 +28,7 @@ module.exports = {
 
 ### Direct Token Access
 ```javascript
-import { colors, typography } from '@your-org/design-tokens';
+import { colors, typography } from '@ybianlian/design-tokens';
 
 console.log(colors.primary[500]);
 console.log(typography.fontSize.base);
