@@ -4,13 +4,10 @@
   "description": "Comprehensive design tokens for consistent styling",
   "type": "module",
   "main": "./dist/tokens.js",
-  "module": "./dist/tokens.js",
-  "types": "./dist/tokens.d.ts",
   "exports": {
     ".": {
       "import": "./dist/tokens.js",
-      "require": "./dist/tokens.js",
-      "types": "./dist/tokens.d.ts"
+      "require": "./dist/tokens.js"
     },
     "./tailwind": {
       "import": "./dist/tailwind/theme.js"
