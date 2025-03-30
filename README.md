@@ -12,12 +12,12 @@ npm install @bianlian/design-tokens
 
 ### CSS Variables
 ```javascript
-import '@bianlian/design-tokens/dist/css/variables.css';
+import '@bianlian/design-tokens/dist/css';
 ```
 
 ### Tailwind Configuration
 ```javascript
-import theme from '@bianlian/design-tokens/dist/tailwind/theme.js';
+import theme from '@bianlian/design-tokens/dist/tailwind';
 
 module.exports = {
   theme: {
