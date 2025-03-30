@@ -28,7 +28,7 @@ module.exports = {
 
 ### Direct Token Access
 ```javascript
-import { colors, typography } from '@ybianlian/design-tokens';
+import { colors, typography } from '@bianlian/design-tokens';
 
 console.log(colors.primary[500]);
 console.log(typography.fontSize.base);

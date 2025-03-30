@@ -2,18 +2,22 @@
   "name": "@bianlian/design-tokens",
   "version": "1.2.1",
   "description": "Comprehensive design tokens for consistent styling",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "type": "module",
+  "main": "./dist/tokens.js",
+  "module": "./dist/tokens.js",
+  "types": "./dist/tokens.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/tokens.js",
+      "require": "./dist/tokens.js",
+      "types": "./dist/tokens.d.ts"
     },
-    "./css": "./dist/css/variables.css",
-    "./tailwind": "./dist/tailwind/theme.js"
+    "./tailwind": {
+      "import": "./dist/tailwind/theme.js"
+    },
+    "./css": {
+      "import": "./dist/css/variables.css"
+    }
   },
   "files": [
     "dist",
