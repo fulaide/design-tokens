@@ -134,7 +134,7 @@ module.exports = {
     // },
     tailwind: {
       transformGroup: "js",
-      buildPath: "dist/tailwind",
+      buildPath: "dist/tailwind/",
       files: [
         {
           destination: "theme.js",
