@@ -33,7 +33,8 @@
     "design-tokens",
     "css-variables",
     "tailwind",
-    "design-system"
+    "design-system",
+    "bian-lian"
   ],
   "author": "Lars Vorreiter <your.email@example.com>",
   "license": "MIT",
