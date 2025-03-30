@@ -19,6 +19,8 @@
     "default": "./dist/tailwind/theme.js"
   }
 },
+
+
   "scripts": {
     
     "clean": "rimraf dist",
