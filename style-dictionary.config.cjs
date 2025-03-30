@@ -13,6 +13,13 @@ StyleDictionary.registerTransform({
   }
 });
 
+StyleDictionary.registerFormat({
+  name: 'javascript/esm',
+  formatter: function({ dictionary }) {
+    return `export default ${JSON.stringify(dictionary.tokens, null, 2)};`;
+  }
+});
+
 module.exports = {
   source: [
     path.resolve(__dirname, 'tokens/**/*.json')
@@ -31,7 +38,7 @@ module.exports = {
       buildPath: 'dist/',
       files: [{
         destination: 'tokens.js',
-        format: 'javascript/module'
+        format: 'javascript/esm'
       }]
     },
     tailwind: {
@@ -39,7 +46,7 @@ module.exports = {
       buildPath: 'dist/tailwind/',
       files: [{
         destination: 'theme.js',
-        format: 'javascript/module'
+        format: 'javascript/esm'
       }]
     }
   },

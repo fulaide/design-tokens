@@ -5,17 +5,16 @@
   "type": "module",
   "main": "./dist/tokens.js",
   "exports": {
-    ".": {
-      "import": "./dist/tokens.js",
-      "require": "./dist/tokens.js"
-    },
-    "./tailwind": {
-      "import": "./dist/tailwind/theme.js"
-    },
-    "./css": {
-      "import": "./dist/css/variables.css"
-    }
+  ".": {
+    "import": "./dist/tokens.js"
   },
+  "./tailwind": {
+    "import": "./dist/tailwind/theme.js"
+  },
+  "./css": {
+    "import": "./dist/css/variables.css"
+  }
+},
   "files": [
     "dist",
     "tokens"

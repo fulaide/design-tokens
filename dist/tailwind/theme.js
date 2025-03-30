@@ -1,9 +1,4 @@
-/**
- * Do not edit directly
- * Generated on Sun, 30 Mar 2025 16:00:58 GMT
- */
-
-module.exports = {
+export default {
   "border": {
     "radius": {
       "none": {
