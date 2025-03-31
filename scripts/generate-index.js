@@ -1,27 +1,15 @@
-// scripts/generate-index.js
-
+// scripts/generateIndex.js
 import fs from 'fs';
 import path from 'path';
 
-const outputPath = path.resolve('dist/index.js');
-//const tokensPath = './tokens.js'; // relative to dist/index.js
-
+const distDir = path.resolve('dist');
 const content = `
-// AUTO-GENERATED FILE - DO NOT EDIT
-// This file re-exports named design tokens
-
-import tokens from './tokens.js';
-
-export const colors = tokens.color;
-export const typography = tokens.typography;
-export const spacing = tokens.spacing;
-export const shadow = tokens.shadow;
-export const opacity = tokens.opacity;
-export const border = tokens.border;
-
-export default tokens;
+// Auto-generated entry point
+module.exports = {
+  variablesPath: './variables.css',
+  themePath: './theme.css'
+};
 `;
 
-fs.writeFileSync(outputPath, content.trim() + '\n', 'utf-8');
-
-console.log('✅ Generated dist/index.js');
+fs.writeFileSync(path.join(distDir, 'index.js'), content.trim() + '\n');
+console.log('✅ dist/index.js generated');

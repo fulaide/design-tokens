@@ -3,27 +3,29 @@
   "version": "1.2.7",
   "description": "Comprehensive design tokens for consistent styling",
   "type": "module",
-  "main": "./dist/tokens.js",
+  "main": "dist/index.js",
+  "style": "dist/theme.css",
   "files": [
-    "dist",
-    "tokens"
+    "dist"
   ],
   "exports": {
     ".": {
       "import": "./dist/index.js"
     },
     "./css": {
-      "default": "./dist/css/variables.css"
+      "default": "./dist/variables.css"
     },
-    "./tailwind": {
-      "default": "./dist/tailwind/theme.js"
+    "./theme": {
+      "default": "./dist/theme.css"
     }
   },
   "scripts": {
     "clean": "rimraf dist",
-    "tokens": "style-dictionary build --config style-dictionary.config.cjs",
-    "generate:index": "node scripts/generate-index.js",
-    "build": "npm run clean && npm run tokens && npm run generate:index",
+   
+
+    "tokens": "style-dictionary build --config src/style-dictionary.config.cjs",
+    "postbuild": "node scripts/generate-index.js",
+    "build": "npm run clean && npm run tokens && npm run postbuild",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests",
