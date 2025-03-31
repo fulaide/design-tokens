@@ -1,6 +1,6 @@
 {
   "name": "@bianlian/design-tokens",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Comprehensive design tokens for consistent styling",
   "type": "module",
   "main": "dist/index.js",
@@ -21,8 +21,6 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-   
-
     "tokens": "style-dictionary build --config src/style-dictionary.config.cjs",
     "postbuild": "node scripts/generate-index.js",
     "build": "npm run clean && npm run tokens && npm run postbuild",
