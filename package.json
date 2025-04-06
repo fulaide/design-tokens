@@ -17,6 +17,9 @@
     },
     "./theme": {
       "default": "./dist/theme.css"
+    },
+    "./figma": {
+      "default": "./dist/figma-variables.json"
     }
   },
   "scripts": {

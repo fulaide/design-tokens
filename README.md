@@ -10,12 +10,14 @@ npm install @bianlian/design-tokens
 
 ## Usage
 
-### CSS Variables
+### CSS Variables for Tailwind v4
 ```javascript
-import '@bianlian/design-tokens/dist/css';
+@import 'tailwindcss';
+@import '@bianlian/design-tokens/css';
+@import '@bianlian/design-tokens/theme';
 ```
 
-### Tailwind Configuration
+<!-- ### Tailwind Configuration
 ```javascript
 import theme from '@bianlian/design-tokens/dist/tailwind';
 
@@ -24,15 +26,15 @@ module.exports = {
     extend: theme
   }
 }
-```
-
+``` -->
+<!-- 
 ### Direct Token Access
 ```javascript
 import { colors, typography } from '@bianlian/design-tokens';
 
 console.log(colors.primary[500]);
 console.log(typography.fontSize.base);
-```
+``` -->
 
 ## Contributing
 - Report issues on GitHub

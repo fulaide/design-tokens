@@ -3,7 +3,7 @@
       "fontFamily": {
         "primary": { "value": "'Inter', sans-serif", "type": "fontFamily" },
         "secondary": { "value": "'Roboto', sans-serif", "type": "fontFamily" },
-        "mono": { "value": "'Fira Code', monospace", "type": "fontFamily" }
+        "mono": { "value": "'Jet Brain mono', monospace", "type": "fontFamily" }
       },
       "fontSize": {
         "xs": { "value": "0.75rem", "type": "fontSize" },
